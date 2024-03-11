@@ -19,7 +19,7 @@ DATABASES = {
     }
 }
 
-CSRF_TRUSTED_ORIGINS = os.getenv('CSRF_ORIGINS').split(" ")
+CSRF_TRUSTED_ORIGINS = ['dev.forfreeletters.com', 'forfreeletters.com']
 
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
