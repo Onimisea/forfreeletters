@@ -24,6 +24,7 @@ INSTALLED_APPS = [
 
     # My Apps
     'main.apps.MainConfig',
+    'newsletter.apps.NewsletterConfig',
 
 
     # Third Parties
