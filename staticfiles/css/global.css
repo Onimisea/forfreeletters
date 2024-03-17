@@ -125,6 +125,13 @@ body {
   display: none;
 }
 
+.alert__error {
+  padding: 5px;
+  /* background-color: red; */
+  color: red;
+  font-weight: bold;
+}
+
 /* MAIN CONTENT */
 .main__content {
   /* background-color: #191970; */
@@ -333,6 +340,213 @@ body {
   border: 2px solid #191970;
 }
 
+.main__content .templates {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding: 10% 0;
+}
+
+.main__content .templates .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.main__content .templates .container .heading {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.main__content .templates .container .heading span {
+  color: #191970;
+}
+
+.main__content .templates .container .heading .divider {
+  width: 60%;
+}
+
+.main__content .templates .container .row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.main__content .templates .container .row .cate {
+  outline: none;
+  border: none;
+  background-color: #191970;
+  color: white;
+  border-radius: 20px;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+.main__content .templates .container .row .cate:hover {
+  background-color: black;
+}
+
+.main__content .templates .container .row .active {
+  background-color: black;
+}
+
+.main__content .templates .container .row .active:hover {
+  background-color: white;
+  color: #191970;
+  border: 1px solid #191970;
+}
+
+.main__content .templates .container .subcate-row .subcate {
+  outline: none;
+  border: 2px solid #191970;
+  background-color: white;
+  color: #191970;
+  border-radius: 20px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.main__content .templates .container .subcate-row .subcate:hover {
+  background-color: #191970;
+  color: white;
+}
+
+.main__content .templates .container .subcate-row .active {
+  background-color: black;
+  color: white;
+}
+
+.main__content .templates .container .subcate-row .active:hover {
+  background-color: white;
+  color: #191970;
+  border: 1px solid #191970;
+}
+
+.main__content .templates .container .templates__row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.main__content .templates .container .templates__rows {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.main__content .templates .container .templates__rows .template__card {
+  width: 30%;
+  background-color: white;
+  padding: 10px 20px 10px 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main__content .templates .container .templates__rows .template__card img {
+  width: 100%;
+  max-height: auto;
+}
+
+.main__content .templates .container .templates__rows .template__card h3 {
+  font-size: 20px;
+  color: #191970;
+}
+
+.main__content .templates .container .templates__rows .template__card .catp {
+  font-size: 16px;
+}
+
+.main__content .templates .container .templates__rows .template__card a {
+  color: white;
+  background-color: #191970;
+  padding: 7px 14px;
+  margin: 10px 0;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.main__content .templates .container .templates__rows .template__card a:hover {
+  background-color: black;
+}
+
+.main__content
+  .templates
+  .container
+  .templates__row
+  .templates__rows__pagination {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__content
+  .templates
+  .container
+  .templates__row
+  .templates__rows__pagination
+  button {
+  color: white;
+  background-color: #191970;
+  padding: 7px 14px;
+  margin: 10px 0;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  width: fit-content;
+  outline: none;
+  border: none;
+}
+
+.main__content
+  .templates
+  .container
+  .templates__row
+  .templates__rows__pagination
+  button:hover {
+  background-color: black;
+}
+
+.main__content
+  .templates
+  .container
+  .templates__row
+  .templates__rows__pagination
+  .active {
+  background-color: black;
+}
+
+.main__content
+  .templates
+  .container
+  .templates__row
+  .templates__rows__pagination
+  .active:hover {
+  background-color: white;
+  color: #191970;
+  border: 1px solid #191970;
+}
+
 .main__content .blog {
   position: relative;
   overflow: hidden;
@@ -505,6 +719,10 @@ footer .a .container .col h3 {
   color: #191970;
 }
 
+.logo__h1 a {
+  text-decoration: none;
+}
+
 .logo__h1 span {
   font-weight: 800;
   color: black;
@@ -668,6 +886,10 @@ footer .b a:hover {
 }
 
 @media (max-width: 840px) {
+  .main__content .templates .container .templates__rows .template__card {
+  width: 45%;
+}
+  
   footer .a .container .col,
   footer .a .container .link__col {
     width: 70%;
@@ -707,6 +929,10 @@ footer .b a:hover {
 }
 
 @media (max-width: 556px) {
+ .main__content .templates .container .templates__rows .template__card {
+  width: 85%;
+}
+
   footer .a .container .col,
   footer .a .container .link__col {
     width: 100%;
