@@ -150,6 +150,88 @@
     </section>
   </section>
 
+  <section class="templates">
+    <section class="container">
+      <section class="heading">
+        <h2>Our <span>Templates</span></h2>
+
+        <section class="divider">
+          <span class="line"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </section>
+      </section>
+
+      <section class="row">
+        <button
+          id="cv"
+          class="cate"
+          hx-get="get-subcategories/cv/"
+          hx-trigger="click"
+          hx-target="#subcate-row"
+        >
+          CV
+        </button>
+        <button
+          id="cover-letters"
+          class="cate"
+          hx-get="get-subcategories/cover-letters/"
+          hx-trigger="click"
+          hx-target="#subcate-row"
+        >
+          Cover Letters
+        </button>
+        <button
+          id="business-letters"
+          class="cate"
+          hx-get="get-subcategories/business-letters/"
+          hx-trigger="click"
+          hx-target="#subcate-row"
+        >
+          Business Letters
+        </button>
+        <button
+          id="recommendation-letters"
+          class="cate"
+          hx-get="get-subcategories/recommendation-letters/"
+          hx-trigger="click"
+          hx-target="#subcate-row"
+        >
+          Recommendation Letters
+        </button>
+        <button
+          id="statement-of-purpose"
+          class="cate"
+          hx-get="get-subcategories/statement-of-purpose/"
+          hx-trigger="click"
+          hx-target="#subcate-row"
+        >
+          Statement of Purpose
+        </button>
+        <button
+          id="biography"
+          class="cate"
+          hx-get="get-subcategories/biography/"
+          hx-trigger="click"
+          hx-target="#subcate-row"
+        >
+          Biography
+        </button>
+      </section>
+
+      <section id="subcate-row" class="row subcate-row"></section>
+
+      <section class="row templates__row">
+        <section id="templates-rows" class="templates__rows"></section>
+        <section
+          id="templates__rows__pagination"
+          class="templates__rows__pagination"
+        ></section>
+      </section>
+    </section>
+  </section>
+
   <section class="blog">
     <section class="container">
       <section class="heading">
@@ -174,7 +256,8 @@
     <section class="overlay"></section>
     <section class="container">
       <h2>Subscribe to our Newsletter</h2>
-      <form action="#" method="post">
+      <form method="post" data-hx-post="newsletter/add/">
+        {% csrf_token %}
         <input
           type="email"
           name="email"
@@ -183,6 +266,11 @@
         />
         <button type="submit" class="primary__btn">Subscribe</button>
       </form>
+      <section
+        id="newsletter-form-htmx-alert"
+        hidden
+        class="alert__error"
+      ></section>
     </section>
   </section>
 </section>

@@ -25,9 +25,12 @@ INSTALLED_APPS = [
     # My Apps
     'main.apps.MainConfig',
     'newsletter.apps.NewsletterConfig',
+    'api.apps.ApiConfig',
+
 
 
     # Third Parties
+    'rest_framework',
 ]
 
 MIDDLEWARE = [

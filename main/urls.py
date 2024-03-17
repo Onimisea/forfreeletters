@@ -1,7 +1,7 @@
 from django.urls import path
-
-from . import views
+from .views import HomeView, get_subcategories
 
 urlpatterns = [
-    path("", views.home, name='home'),
+    path("", HomeView.as_view(), name='home'),
+    path('get-subcategories/<str:category>/', get_subcategories, name='get_subcategories'),
 ]
