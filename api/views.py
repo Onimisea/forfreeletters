@@ -39,3 +39,17 @@ class GenericTemplateList(APIView):
         serializer = GenericTemplateSerializer(result_page, many=True)
         
         return paginator.get_paginated_response(serializer.data)
+
+
+class SubcategoriesList(APIView):
+    def get(self, request, category=None):
+        if category == 'all':
+            subcategories = GenericTemplate.objects.values_list('subcategory', flat=True).distinct()
+        elif category:
+            subcategories = GenericTemplate.objects.filter(category=category).values_list('subcategory', flat=True).distinct()
+        else:
+            return Response({'error': 'Category not provided'}, status=status.HTTP_400_BAD_REQUEST)
+        
+        subcategories_list = list(subcategories)
+        return Response({'subcategories': subcategories_list}, status=status.HTTP_200_OK)
+
