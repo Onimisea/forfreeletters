@@ -19,34 +19,20 @@
         </p>
       </section>
 
-      <section class="link__col">
-        <section class="cola">
+      <section class="col">
         <h3>Links</h3>
 
         <nav>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/">CV</a></li>
-            <li><a href="/">Cover Letters</a></li>
-            <li><a href="/">Biography</a></li>
-            <li><a href="/">Statement of Purpose</a></li>
-            <li><a href="/">Business Letters</a></li>
-          </ul>
-        </nav>
-      </section>
-
-      <section class="colb">
-        <nav class="nav2">
-          <ul>
-            <li><a href="/">Recommendation Letters</a></li>
-            <li><a href="/">Buy Me a Coffee</a></li>
+            <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'templates' %}">Templates</a></li>
+        <li><a href="{% url 'register' %}">Register</a></li>
+        <li><a href="{% url 'login' %}">Login</a></li>
+        <li><a href="/">Buy Me a Coffee</a></li>
             <li><a href="/">Privacy Policy</a></li>
             <li><a href="/">Contacts</a></li>
-            <li><a href="/">Register</a></li>
-            <li><a href="/">Login</a></li>
           </ul>
         </nav>
-      </section>
       </section>
 
       <section class="col">

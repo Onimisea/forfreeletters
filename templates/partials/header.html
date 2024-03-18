@@ -8,15 +8,8 @@
       <ul id="navlinks">
         <li><a href="{% url 'home' %}">Home</a></li>
         <li><a href="{% url 'templates' %}">Templates</a></li>
-        {% comment %}
-        <li><a href="#">Cover Letters</a></li>
-        <li><a href="#">Biography</a></li>
-        <li><a href="#">Statement of Purpose</a></li>
-        <li><a href="#">Business Letters</a></li>
-        <li><a href="#">Recommendation Letters</a></li>
-        {% endcomment %}
-        <li><a href="#">Register</a></li>
-        <li><a href="#">Login</a></li>
+        <li><a href="{% url 'register' %}">Register</a></li>
+        <li><a href="{% url 'login' %}">Login</a></li>
       </ul>
       <i id="toggleNav" class="ri-menu-line nav__toggle"></i>
     </nav>

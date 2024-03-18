@@ -126,27 +126,30 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     const allTemplates = document.getElementById("all__templates");
-    allTemplates.addEventListener("click", function () {
-      templateCategory = "";
-      templateSubcategory = "";
-      currentPage = 1;
-      searchQuery = "";
 
-      fetchData(
-        currentPage,
-        searchQuery,
-        templateCategory,
-        templateSubcategory
-      );
+    if (allTemplates) {
+      allTemplates.addEventListener("click", function () {
+        templateCategory = "";
+        templateSubcategory = "";
+        currentPage = 1;
+        searchQuery = "";
 
-      catebuttons.forEach((button) => {
-        button.classList.remove("active");
+        fetchData(
+          currentPage,
+          searchQuery,
+          templateCategory,
+          templateSubcategory
+        );
+
+        catebuttons.forEach((button) => {
+          button.classList.remove("active");
+        });
+
+        subcatebuttons.forEach((button) => {
+          button.classList.remove("active");
+        });
       });
-
-      subcatebuttons.forEach((button) => {
-        button.classList.remove("active");
-      });
-    });
+    }
 
     // Add event listener to search input field
     const searchInput = document.querySelector(".form-control");
