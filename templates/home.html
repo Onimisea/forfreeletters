@@ -165,9 +165,19 @@
 
       <section class="row">
         <button
+          id="all__templates"
+          class="all__templates"
+          hx-get="http://127.0.0.1:8000/api/get-subcategories/all/"
+          hx-trigger="click"
+          hx-target="#subcate-row"
+        >
+          All
+        </button>
+        
+        <button
           id="cv"
           class="cate"
-          hx-get="get-subcategories/cv/"
+          hx-get="api/get-subcategories/cv/"
           hx-trigger="click"
           hx-target="#subcate-row"
         >
@@ -176,7 +186,7 @@
         <button
           id="cover-letters"
           class="cate"
-          hx-get="get-subcategories/cover-letters/"
+          hx-get="api/get-subcategories/cover-letters/"
           hx-trigger="click"
           hx-target="#subcate-row"
         >
@@ -185,7 +195,7 @@
         <button
           id="business-letters"
           class="cate"
-          hx-get="get-subcategories/business-letters/"
+          hx-get="api/get-subcategories/business-letters/"
           hx-trigger="click"
           hx-target="#subcate-row"
         >
@@ -194,7 +204,7 @@
         <button
           id="recommendation-letters"
           class="cate"
-          hx-get="get-subcategories/recommendation-letters/"
+          hx-get="api/get-subcategories/recommendation-letters/"
           hx-trigger="click"
           hx-target="#subcate-row"
         >
@@ -203,7 +213,7 @@
         <button
           id="statement-of-purpose"
           class="cate"
-          hx-get="get-subcategories/statement-of-purpose/"
+          hx-get="api/get-subcategories/statement-of-purpose/"
           hx-trigger="click"
           hx-target="#subcate-row"
         >
@@ -212,7 +222,7 @@
         <button
           id="biography"
           class="cate"
-          hx-get="get-subcategories/biography/"
+          hx-get="api/get-subcategories/biography/"
           hx-trigger="click"
           hx-target="#subcate-row"
         >

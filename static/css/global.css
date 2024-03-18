@@ -587,6 +587,274 @@ body {
   gap: 100px;
 }
 
+.main__content .all__templates {
+  outline: none;
+  border: none;
+  background-color: #191970;
+  color: white;
+  border-radius: 20px;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+.main__content .all__templates:hover {
+  background-color: black;
+}
+
+.main__content .templates__wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding: 5% 0;
+}
+
+.main__content .templates__wrapper .container .search__input {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.main__content .templates__wrapper .container .search__input .form-control {
+  padding: 7px 14px;
+  border: 1px solid #191970;
+  outline: none;
+  border-radius: 8px;
+  width: 100%;
+  background: white;
+}
+
+.main__content .templates__wrapper .container .search__input .form-control:focus, .main__content .templates__wrapper .container .search__input .form-control:hover {
+  border: 2px solid black;
+}
+
+.main__content .templates__wrapper .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.main__content .templates__wrapper .container .heading {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.main__content .templates__wrapper .container .heading h1 {
+  font-size: 27px;
+}
+
+.main__content .templates__wrapper .container .heading span {
+  color: #191970;
+}
+
+.main__content .templates__wrapper .container .heading .divider {
+  width: 60%;
+}
+
+.main__content .templates__wrapper .container .row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.main__content .templates__wrapper .container .row .cate {
+  outline: none;
+  border: none;
+  background-color: #191970;
+  color: white;
+  border-radius: 20px;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+.main__content .templates__wrapper .container .row .cate:hover {
+  background-color: black;
+}
+
+.main__content .templates__wrapper .container .row .active {
+  background-color: black;
+}
+
+.main__content .templates__wrapper .container .row .active:hover {
+  background-color: white;
+  color: #191970;
+  border: 1px solid #191970;
+}
+
+.main__content .templates__wrapper .container .subcate-row .subcate {
+  outline: none;
+  border: 2px solid #191970;
+  background-color: white;
+  color: #191970;
+  border-radius: 20px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.main__content .templates__wrapper .container .subcate-row .subcate:hover {
+  background-color: #191970;
+  color: white;
+}
+
+.main__content .templates__wrapper .container .subcate-row .active {
+  background-color: black;
+  color: white;
+}
+
+.main__content .templates__wrapper .container .subcate-row .active:hover {
+  background-color: white;
+  color: #191970;
+  border: 1px solid #191970;
+}
+
+.main__content .templates__wrapper .container .templates__row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.main__content .templates__wrapper .container .templates__rows {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.main__content .templates__wrapper .container .templates__rows .template__card {
+  width: 30%;
+  background-color: white;
+  padding: 10px 20px 10px 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main__content
+  .templates__wrapper
+  .container
+  .templates__rows
+  .template__card
+  img {
+  width: 100%;
+  max-height: auto;
+}
+
+.main__content
+  .templates__wrapper
+  .container
+  .templates__rows
+  .template__card
+  h3 {
+  font-size: 20px;
+  color: #191970;
+}
+
+.main__content
+  .templates__wrapper
+  .container
+  .templates__rows
+  .template__card
+  .catp {
+  font-size: 16px;
+}
+
+.main__content
+  .templates__wrapper
+  .container
+  .templates__rows
+  .template__card
+  a {
+  color: white;
+  background-color: #191970;
+  padding: 7px 14px;
+  margin: 10px 0;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.main__content
+  .templates__wrapper
+  .container
+  .templates__rows
+  .template__card
+  a:hover {
+  background-color: black;
+}
+
+.main__content
+  .templates__wrapper
+  .container
+  .templates__row
+  .templates__rows__pagination {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__content
+  .templates__wrapper
+  .container
+  .templates__row
+  .templates__rows__pagination
+  button {
+  color: white;
+  background-color: #191970;
+  padding: 7px 14px;
+  margin: 10px 0;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  width: fit-content;
+  outline: none;
+  border: none;
+}
+
+.main__content
+  .templates__wrapper
+  .container
+  .templates__row
+  .templates__rows__pagination
+  button:hover {
+  background-color: black;
+}
+
+.main__content
+  .templates__wrapper
+  .container
+  .templates__row
+  .templates__rows__pagination
+  .active {
+  background-color: black;
+}
+
+.main__content
+  .templates__wrapper
+  .container
+  .templates__row
+  .templates__rows__pagination
+  .active:hover {
+  background-color: white;
+  color: #191970;
+  border: 1px solid #191970;
+}
+
 /* 
 
 .main__content .hiw .hiw__container .container {
@@ -887,9 +1155,9 @@ footer .b a:hover {
 
 @media (max-width: 840px) {
   .main__content .templates .container .templates__rows .template__card {
-  width: 45%;
-}
-  
+    width: 45%;
+  }
+
   footer .a .container .col,
   footer .a .container .link__col {
     width: 70%;
@@ -929,9 +1197,9 @@ footer .b a:hover {
 }
 
 @media (max-width: 556px) {
- .main__content .templates .container .templates__rows .template__card {
-  width: 85%;
-}
+  .main__content .templates .container .templates__rows .template__card {
+    width: 85%;
+  }
 
   footer .a .container .col,
   footer .a .container .link__col {
