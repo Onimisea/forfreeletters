@@ -7,8 +7,10 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('main.urls')),
+    path('auto-auth-urls', include('django.contrib.auth.urls')),
     path('newsletter/', include('newsletter.urls')),
     path('api/', include('api.urls')),
+    path('', include('accounts.urls')),
 ]
 
 if settings.DEBUG:
