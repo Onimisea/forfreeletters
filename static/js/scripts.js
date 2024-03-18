@@ -173,7 +173,7 @@ document.addEventListener("DOMContentLoaded", function () {
       templateSubcategory
     ) {
       // Construct URL with query parameters
-      const baseUrl = "http://127.0.0.1:8000/api/generic-templates/";
+      const baseUrl = "https://dev.forfreeletters.com/api/generic-templates/";
       const queryParams = new URLSearchParams({
         page: currentPage || 1,
         category: templateCategory || "",
@@ -219,7 +219,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Create HTML elements for each template and append to rowsSection
         const templateElement = `<section class="template__card">
-        <img src="http://127.0.0.1:8000/${template.image_preview_url}" alt="" />
+        <img src="https://dev.forfreeletters.com/${template.image_preview_url}" alt="" />
         <h3>${template.name}</h3>
         <p class="catp">${formattedCategory}</p>
         <a href="${template.file_upload_url}" download>Download</a>
