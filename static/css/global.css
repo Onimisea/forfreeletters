@@ -940,42 +940,14 @@ body {
 }
 
 .main__content .container .register .register__success {
-  color: green;
-  font-size: 21px;
+  color: #191970;
+  font-size: 16px;
   line-height: 36px;
 }
 
 .main__content .container .register .register__success span {
-  color: #191970;
+  color: green;
 }
-
-/* 
-
-.main__content .hiw .hiw__container .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-
-
-.main__content .hiw .hiw__container .container .col:nth-child(1) h1 {
-  font-size: 27px;
-  font-weight: bolder;
-  text-transform: uppercase;
-  line-height: 40px;
-  color: black;
-}
-
-.main__content .hiw .hiw__container .container .col:nth-child(1) p {
-  font-size: 15px;
-  line-height: 27px;
-  color: black;
-  word-break: keep-all;
-  text-align: justify;
-}
-
- */
 
 /* HEADER */
 header {
