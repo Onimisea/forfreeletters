@@ -1227,3 +1227,12 @@ footer .b a:hover {
     width: 100%;
   }
 }
+
+/* Privacy page */
+div .privacy__page {
+  display: flex;
+}
+
+.par__ppage {
+  margin: 5px;
+}
