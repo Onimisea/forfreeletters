@@ -1,0 +1,133 @@
+{% extends 'base.html' %} {% load static %} {% block title %}
+<title>Dashboard | ForfreeLetters</title> {% endblock title %} 
+{% block seometa %}
+<!-- SEO -->
+<meta name="description" content="Your page description goes here." />
+<meta name="keywords" content="keyword1, keyword2, keyword3" />
+<meta name="author" content="Onimisea" />
+
+<meta name="robots" content="index, follow" />
+<meta name="googlebot" content="index, follow" />
+
+<!-- Open Graph (OG) Tags -->
+<meta property="og:title" content="Your Page Title" />
+<meta property="og:description" content="Your page description goes here." />
+<meta property="og:image" content="https://example.com/your-image.jpg" />
+<meta property="og:url" content="https://example.com/your-page-url" />
+<meta property="og:site_name" content="Your Site Name" />
+<meta property="og:type" content="website" />
+
+<!-- Twitter Card Tags -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@yourtwitterhandle" />
+<meta name="twitter:title" content="Your Page Title" />
+<meta name="twitter:description" content="Your page description goes here." />
+<meta name="twitter:image" content="https://example.com/your-image.jpg" />
+{% endblock seometa %} {% block content %}
+
+<section class="main__content">
+  <section class="templates__wrapper">
+    <section class="container">
+      <section class="heading">
+        <h1><span>Dashboard</span></h1>
+
+        <section class="divider">
+          <span class="line"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </section>
+      </section>
+
+      <section class="row">
+        <button
+          id="all__templates"
+          class="all__templates"
+          hx-get="https://dev.forfreeletters.com/api/get-subcategories/all/"
+          hx-trigger="click"
+          hx-target="#subcate-row"
+        >
+          All
+        </button>
+
+        <button
+          id="cv"
+          class="cate"
+          hx-get="https://dev.forfreeletters.com/api/get-subcategories/cv/"
+          hx-trigger="click"
+          hx-target="#subcate-row"
+        >
+          CV
+        </button>
+        <button
+          id="cover-letters"
+          class="cate"
+          hx-get="https://dev.forfreeletters.com/api/get-subcategories/cover-letters/"
+          hx-trigger="click"
+          hx-target="#subcate-row"
+        >
+          Cover Letters
+        </button>
+        <button
+          id="business-letters"
+          class="cate"
+          hx-get="https://dev.forfreeletters.com/api/get-subcategories/business-letters/"
+          hx-trigger="click"
+          hx-target="#subcate-row"
+        >
+          Business Letters
+        </button>
+        <button
+          id="recommendation-letters"
+          class="cate"
+          hx-get="https://dev.forfreeletters.com/api/get-subcategories/recommendation-letters/"
+          hx-trigger="click"
+          hx-target="#subcate-row"
+        >
+          Recommendation Letters
+        </button>
+        <button
+          id="statement-of-purpose"
+          class="cate"
+          hx-get="https://dev.forfreeletters.com/api/get-subcategories/statement-of-purpose/"
+          hx-trigger="click"
+          hx-target="#subcate-row"
+        >
+          Statement of Purpose
+        </button>
+        <button
+          id="biography"
+          class="cate"
+          hx-get="https://dev.forfreeletters.com/api/get-subcategories/biography/"
+          hx-trigger="click"
+          hx-target="#subcate-row"
+        >
+          Biography
+        </button>
+      </section>
+
+      <section id="subcate-row" class="row subcate-row"></section>
+
+      <section class="search__input">
+        <input
+          class="form-control"
+          type="search"
+          name="search"
+          placeholder="Search for Templates..."
+          hx-get="https://dev.forfreeletters.com/api/generic-templates/?search=search"
+          hx-trigger="input changed delay:500ms, search"
+        />
+      </section>
+
+      <section class="row templates__row">
+        <section id="templates-rows" class="templates__rows"></section>
+        <section
+          id="templates__rows__pagination"
+          class="templates__rows__pagination"
+        ></section>
+      </section>
+    </section>
+  </section>
+</section>
+
+{% endblock content %}

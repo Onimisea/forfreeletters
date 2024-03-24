@@ -1,5 +1,6 @@
 from django.urls import reverse
 from rest_framework import serializers
+
 from .models import GenericTemplate
 
 
@@ -9,7 +10,7 @@ class GenericTemplateSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = GenericTemplate
-        fields = '__all__'
+        fields = "__all__"
 
     def get_file_upload_url(self, obj):
         if obj.file_upload:

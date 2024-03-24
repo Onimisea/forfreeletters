@@ -898,7 +898,7 @@ body {
   width: 60%;
 }
 
-.main__content .container .register form {
+form {
   margin-top: 30px;
   width: 100%;
   display: flex;
@@ -907,12 +907,12 @@ body {
   justify-content: center;
 }
 
-.main__content .container .register form .form-group {
-  margin: 15px 0;
+form .form-group {
+  margin: 13px 0;
   width: 100%;
 }
 
-.main__content .container .register form .form-group .form-control {
+form .form-group .form-control {
   width: 100%;
   padding: 7px 10px;
   border-radius: 8px;
@@ -920,22 +920,24 @@ body {
   border: 1px solid #191970;
 }
 
-.main__content .container .register form .form-group .form-control:focus,
-.main__content .container .register form .form-group .form-control:hover {
+form .form-group .form-control:focus,
+form .form-group .form-control:hover {
   border: 2px solid black;
 }
 
-.main__content .container .register form .form-group .text-danger {
+form .text-danger {
   color: red;
   display: block;
   margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
 }
 
-.main__content .container .register form .form-group .text-danger ul {
+form .text-danger ul {
   list-style-position: inside;
 }
 
-.main__content .container .register form .form-group .text-danger ul li {
+form .text-danger ul li {
   margin-left: 5px;
 }
 
@@ -1170,6 +1172,20 @@ footer .b a:hover {
   color: white;
   box-shadow: 0 5px 10px rgba(25, 25, 112, 1);
 }
+
+
+
+/* Account Verify Page */
+.main__content .container .verify__wrapper {
+  padding: 10% 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+
 
 /* MEDIA QUERIES */
 

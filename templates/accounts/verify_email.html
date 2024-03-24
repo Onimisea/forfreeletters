@@ -1,5 +1,6 @@
 {% extends 'base.html' %} {% load static %} {% block title %}
-<title>Login | ForfreeLetters</title> {% endblock title %} {% block seometa %}
+<title>Register | ForfreeLetters</title> {% endblock title %} 
+{% block seometa %}
 <!-- SEO -->
 <meta name="description" content="Your page description goes here." />
 <meta name="keywords" content="keyword1, keyword2, keyword3" />
@@ -26,48 +27,10 @@
 
 <section class="main__content">
   <section class="container">
-    <section class="register">
-      <section class="heading">
-        <h1><span>Login</span></h1>
+    <section class="verify__wrapper">
+      <h3>{{ message }}</h3>
 
-        <section class="divider">
-          <span class="line"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </section>
-      </section>
-
-      <form method="post">
-        {% csrf_token %}
-
-        <section class="form-group">
-          <input
-            type="email"
-            name="email"
-            id="email"
-            class="form-control"
-            required
-            placeholder="Email Address"
-          />
-        </section>
-        <section class="form-group">
-          <input
-            type="password"
-            name="password"
-            id="password"
-            class="form-control"
-            required
-            placeholder="Password"
-          />
-        </section>
-
-        {% if form.non_field_errors %}
-        <small class="text-danger">{{ form.non_field_errors }}</small>
-        {% endif %}
-
-        <button type="submit" class="primary__btn">Login</button>
-      </form>
+      <a href="{% url 'login' %}" class="primary__btn">Login</a>
     </section>
   </section>
 </section>
