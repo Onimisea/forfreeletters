@@ -28,6 +28,15 @@
 <section class="main__content">
   <section class="container">
     <section class="verify__wrapper">
+      <!-- Display messages -->
+        {% for message in messages %}
+        <small
+          class="alert {% if message.tags == 'error' %} alert-danger {% elif message.tags == 'warning' %} alert-warning {% elif message.tags == 'success' %} alert-success {% else %} alert-info {% endif %}"
+        >
+          {{ message }}
+        </small>
+        {% endfor %}
+        
       <h3>{{ message }}</h3>
 
       <a href="{% url 'login' %}" class="primary__btn">Login</a>

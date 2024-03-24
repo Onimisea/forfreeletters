@@ -47,3 +47,24 @@ class UserLoginForm(forms.Form):
         widget=forms.PasswordInput(
             attrs={"class": "form-control", "placeholder": "Password"})
     )
+
+class ForgottenPasswordForm(forms.Form):
+    email = forms.EmailField(
+        required=True,
+        widget=forms.EmailInput(
+            attrs={"class": "form-control", "placeholder": "Email Address"})
+    )
+
+
+class ResetPasswordForm(forms.Form):
+    password = forms.CharField(
+        required=True,
+        widget=forms.PasswordInput(
+            attrs={"class": "form-control", "placeholder": "Password"})
+    )
+
+    confirm_password = forms.CharField(
+        required=True,
+        widget=forms.PasswordInput(
+            attrs={"class": "form-control", "placeholder": "Confirm Password"})
+    )

@@ -104,10 +104,11 @@ else:
 # SMTP Configuration
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 EMAIL_HOST = config("EMAIL_HOST", default="localhost")
-EMAIL_PORT = config("EMAIL_PORT", default=25)
+EMAIL_PORT = config("EMAIL_PORT", default=587)
 EMAIL_HOST_USER = config("EMAIL_USER", default="")
 EMAIL_HOST_PASSWORD = config("EMAIL_PASSWORD", default="")
-EMAIL_USE_TLS = False
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False
 DEFAULT_FROM_EMAIL = config("DEFAULT_FROM_EMAIL", default="")
 
 
