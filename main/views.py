@@ -84,13 +84,6 @@ class PrivacyPageView(ListView):
     def get_queryset(self):
         pass
 
-class ContactView(ListView):
-    model = GenericTemplate
-    template_name = "contact.html"
-    context_object_name = "contact"
-
-    def get_queryset(self):
-        pass
 
 
 

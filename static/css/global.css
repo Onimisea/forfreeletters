@@ -1229,7 +1229,7 @@ footer .b a:hover {
 }
 
 /* Privacy page */
-div .privacy__page {
+.privacy {
   display: flex;
 }
 
