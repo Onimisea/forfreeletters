@@ -4,7 +4,7 @@ from django.core.paginator import Paginator
 from django.db.models import Q
 from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render
-from django.views.generic import ListView
+from django.views.generic import ListView, View
 from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import GenericTemplate
 from django.contrib.auth.decorators import login_required
@@ -44,14 +44,6 @@ class HomeView(ListView):
 
         return queryset
 
-    # def get_context_data(self, **kwargs):
-    #     context = super().get_context_data(**kwargs)
-    #     context['category_filter'] = self.request.GET.get('category')
-    #     context['subcategory_filter'] = self.request.GET.get('subcategory')
-    #     context['search_query'] = self.request.GET.get('s')
-    #     context['sort_by'] = self.request.GET.get('sort_by', '-date_added')
-    #     return context
-
 
 class TemplatesView(ListView):
     model = GenericTemplate
@@ -87,12 +79,20 @@ class TemplatesView(ListView):
         return queryset
 
 
+class ContactsView(View):
+    template_name = "contacts.html"
+    context_object_name = "contacts"
+
+    def get(self, request):
+        return render(request, self.template_name)
+
+
 class DashboardView(LoginRequiredMixin, ListView):
     model = GenericTemplate
     template_name = "dashboard.html"
     context_object_name = "dashboard"
     paginate_by = 12
-    login_url = reverse_lazy('login')  # Specify the login URL
+    login_url = reverse_lazy("login")  # Specify the login URL
 
     def get_queryset(self):
         query = self.request.GET.get("s")

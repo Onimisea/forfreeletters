@@ -1267,6 +1267,41 @@ footer .b a:hover {
   justify-content: center;
 }
 
+/* Contacts Page */
+.main__content .contacts {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding: 5% 0;
+}
+
+.main__content .contacts .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.main__content .contacts .container .heading {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.main__content .contacts .container .heading span {
+  color: #191970;
+}
+
+.main__content .contacts .container .heading .divider {
+  width: 60%;
+}
+
+
+
 /* MEDIA QUERIES */
 
 @media (max-width: 1400px) {

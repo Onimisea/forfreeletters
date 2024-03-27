@@ -68,6 +68,6 @@ admin.site.register(CustomUser, CustomUserAdmin)
 
 @admin.register(PasswordResetToken)
 class PasswordResetTokenAdmin(admin.ModelAdmin):
-    list_display = ('user', 'token', 'created_at')
-    search_fields = ('user__email', 'token')
-    list_filter = ('created_at',)
+    list_display = ("user", "token", "created_at")
+    search_fields = ("user__email", "token")
+    list_filter = ("created_at",)
