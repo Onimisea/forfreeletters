@@ -79,9 +79,9 @@ class TemplatesView(ListView):
         return queryset
 
 
-class ContactsView(View):
-    template_name = "contacts.html"
-    context_object_name = "contacts"
+class PrivacyPageView(View):
+    template_name = "privacy_page.html"
+    context_object_name = "privacy"
 
     def get(self, request):
         return render(request, self.template_name)

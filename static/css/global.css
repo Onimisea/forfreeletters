@@ -1454,3 +1454,28 @@ footer .b a:hover {
     width: 100%;
   }
 }
+
+/* Privacy page */
+.main__content .privacy .container .privacy_section .privacy__page {
+  display: flex;
+}
+
+.main__content .privacy .container .privacy_section h2 {
+  padding-left: 3px;
+}
+
+.main__content .privacy .container .privacy_section {
+  padding-left: 30px;
+}
+
+.main__content .privacy .container .privacy_section .par__ppage {
+  margin: 20px;
+}
+
+.main__content .privacy .container .par__last {
+  padding-left: 20px;
+}
+
+.main__content .privacy .container .par__one {
+  margin: 20px;
+}
