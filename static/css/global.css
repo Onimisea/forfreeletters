@@ -1229,10 +1229,26 @@ footer .b a:hover {
 }
 
 /* Privacy page */
-.privacy {
+.main__content .privacy .container .privacy_section .privacy__page {
   display: flex;
 }
 
-.par__ppage {
-  margin: 5px;
+.main__content .privacy .container .privacy_section h2 {
+  padding-left: 3px;
+}
+
+.main__content .privacy .container .privacy_section {
+  padding-left: 30px;
+}
+
+.main__content .privacy .container .privacy_section .par__ppage {
+  margin: 20px;
+}
+
+.main__content .privacy .container .par__last {
+  padding-left: 20px;
+}
+
+.main__content .privacy .container .par__one {
+  margin: 20px;
 }
