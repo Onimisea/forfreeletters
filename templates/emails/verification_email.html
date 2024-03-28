@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account Verification</title>
+    <style>
+      .container {
+        margin: 0;
+        padding: 5px 0;
+        background-color: #f2f2f2;
+      }
+
+      .container .container__inner {
+        width: 400px;
+        margin: 100px !important;
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+        justify-content: center;
+      }
+
+
+      .container .container__inner p {
+        color: #666;
+        margin-bottom: 20px;
+      }
+
+      .container .container__inner .btn {
+        display: inline-block;
+        padding: 8px 14px;
+        background-color: #191970;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .container .container__inner.btn:hover,
+      .container .container__inner.btn:focus {
+        background-color: black;
+      }
+
+      .container .container__inner .wrapper {
+        margin-top: 20px;
+      }
+
+      .container .container__inner .wrapper h1 {
+        color: black;
+        font-weight: 27px;
+        font-weight: bolder;
+      }
+
+      .container .container__inner .wrapper span {
+        color: #191970;
+      }
+
+      .container .container__inner .wrapper .divider {
+        width: 150px;
+        margin: 7px auto;
+      }
+
+      .container .container__inner .wrapper .divider .line {
+        width: 70%;
+        height: 3px;
+        background-color: #191970;
+        border-radius: 50px;
+      }
+
+      .container .container__inner .wrapper .divider .dot {
+        width: 4px;
+        height: 4px;
+        background-color: #191970;
+        border-radius: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section class="container__inner">
+        <section class="heading"></section>
+
+        <section class="wrapper">
+          <h1>Forfree<span>Letters</span></h1>
+
+          <section class="divider">
+            <span class="line"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </section>
+
+          <p>
+            Welcome {{ first_name }}, please verify your account by clicking on
+            the button below:
+          </p>
+          <a class="btn" href="{{ verification_link }}">Verify Email</a>
+          <p>
+            We urge you to login to your account and browse our AI-generated
+            templates.
+          </p>
+        </section>
+      </section>
+    </div>
+  </body>
+</html>
